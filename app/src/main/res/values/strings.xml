@@ -1,6 +1,43 @@
 <resources>
     <string name="app_name">ZexyGacha</string>
 
-    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+
+    <string-array name="zexies">
+        <item>マルチすぎる♥PAUL ＆ JOE　キッチンタイマー</item>
+        <item>新婚専用♥“お料理のキホン”すぐ見えるシート</item>
+        <item>常識・しきたり・マナー ベストアンサーBOOK</item>
+        <item>新妻1000人のセキララ新婚SEX白書 ひみつのセクシィ♥</item>
+        <item>ドレス＆小物 PRINCESSコーディネートBOOK</item>
+        <item>【結婚準備ダンドリ】チェックsheet</item>
+        <item>ピンクの婚姻届</item>
+        <item>シアワセすぎる 花嫁専用 自撮り棒</item>
+        <item>たった1日でできちゃう手作りアイテムBOOK</item>
+        <item>日本全国の“最幸(サイコー！)ウエディング”実例BOOK</item>
+        <item>結婚式がもっと楽しくおしゃれになる！ ウエディングアイデア BOOK</item>
+        <item>結婚の手続き＆届け出　最短BOOK</item>
+        <item>結婚する今だからできる親孝行をしませんか？ 親想いゼクシィ</item>
+        <item>JILLSTUARTコラボ 花嫁すぎる　スリッパ＆マルチポーチ</item>
+        <item>花嫁“見違え”HAIRSTYLE100</item>
+        <item>見積りを味方につける本</item>
+        <item>ピンクの婚姻届</item>
+        <item>新婚ほやほや専用 記念撮影グッズ</item>
+        <item>提出できる “破れない"ピンクの婚姻届</item>
+        <item>EXILE ATSUSHIが歌うゼクシィCMソング 「Precious Love」オリジナル楽譜</item>
+        <item>彼・彼女を喜ばせるLOVE DO チケット</item>
+        <item>結婚の手続き・届け出・もらえるお金 カンペキBOOK</item>
+        <item>ベルサイユのばら 完全描き下ろし 愛と波乱の結婚準備ダンドリBOOK </item>
+        <item>豪華28点セット！ ＬＯＶＥ伝わりすぎる！お弁当キット</item>
+        <item>紙なのにオシャレ！紙だからカンタン！ ひと目惚れ 手作りWEDDING　ITEM　BOOK　</item>
+        <item>夫婦のHAPPY度がググッとUP 結婚が決まったら式準備以外に彼とするべき10のことBOOK</item>
+        <item>写真で作り方解説! 持ち運べるバックサイズ! !  手作りアイテムBOOK ALL100</item>
+        <item>ゲストおもてなしBOOK 決定版</item>
+        <item>親孝行ゼクシィ</item>
+        <item>"性生活"のお悩み解消 新婚専用セクシィ</item>
+        <item>ポケットふたつで絡まないのに離れない!  仲良しすぎる 洗濯ネット</item>
+        <item>したい結婚式のイメージに合わせて 超保存版 WEDDING BGM 丸ごとセレクトBOOK</item>
+        <item>全国おしゃれ花嫁スナップ200 BOOK</item>
+        <item>はじめての家計&amp;保険BOOK</item>
+    </string-array>
+
 </resources>

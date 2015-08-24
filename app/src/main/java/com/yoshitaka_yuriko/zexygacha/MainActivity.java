@@ -1,9 +1,18 @@
 package com.yoshitaka_yuriko.zexygacha;
 
+import android.app.Activity;
+import android.content.res.Resources;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.animation.GridLayoutAnimationController;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.ListView;
+
+import java.util.List;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -12,27 +21,34 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Button gachaButton = (Button)findViewById(R.id.gacha_button);
+        gachaButton.setOnClickListener(new GachaButtonOnClickListener(this));
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
+    private class GachaButtonOnClickListener implements View.OnClickListener {
+        private Activity mContext;
+        private ZexyList mZexyList;
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+        private final int GACHA_AMOUNT = 10;
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        GachaButtonOnClickListener(Activity context) {
+            Resources r = getResources();
+            mContext  = context;
+            mZexyList = new ZexyList(r.getStringArray(R.array.zexies));
         }
 
-        return super.onOptionsItemSelected(item);
+        @Override
+        public void onClick(View v) {
+            List<String> result = mZexyList.gacha(GACHA_AMOUNT);
+            ListView listView = (ListView) mContext.findViewById(R.id.gacha_result);
+            ArrayAdapter<String> adapter = new ArrayAdapter<>(
+                    mContext,
+                    android.R.layout.simple_list_item_1,
+                    result
+            );
+            listView.setAdapter(adapter);
+
+        }
     }
 }
