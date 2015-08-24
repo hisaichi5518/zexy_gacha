@@ -1,4 +1,4 @@
-# 新婚専用:heart: ゼクシィガチャ
+# 新婚専用:heart: ゼクシィ10連ガチャ
 
 ![gacha](images/gacha.gif)
 
